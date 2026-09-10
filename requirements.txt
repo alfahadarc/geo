@@ -1,0 +1,15 @@
+# Core pipeline. NetworkX deliberately not required -- the simulation core uses
+# scipy.sparse.csgraph directly, which is ~50-100x faster per replicate.
+geopandas>=1.0
+shapely>=2.0
+pyproj>=3.6
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+
+# Optional
+# pygris          # tigris-style wrapper for TIGER downloads
+# osmnx>=2.0      # alternative road-network source
+# powerlaw        # independent check on the MLE fit in analysis.fit_powerlaw
+# spopt           # exact p-median instead of the k-means approximation
